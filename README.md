@@ -1,4 +1,4 @@
-#-------------- shalun-case --------------#
+# shalun-case #
 IEC61850 and whitelist example
 ### inverter gateway ###
 1. sudo reboot         //重啟pi
