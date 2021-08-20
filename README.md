@@ -9,13 +9,14 @@ IEC61850 and whitelist example
 ### server ###
 1. sudo reboot         //重啟pi
 2. ./close_iptables.sh //關閉防火牆 
+---------------------------------------
 3. 打開iec61850通訊連線環境(用docker build, 昀陞已寫好.sh腳本,可vim run_61850_server.sh查看腳本內容)
     cd libiec61850/
     docker image ls
     sudo ./run_61850_server.sh no_tls latest 8102
     sudo ./run_61850_server.sh tls latest 8103 (這可以不用執行，因昀陞已經有設定(restart=always)成重開後會自動restart)
 4. sudo getenforce //確認白名單狀態(是否啟動)
-
+----------------------------------------
 p.s: config_file 檔: 控制inverter開關與其他相關狀態的設定檔(若之後inverter gateway ip:port, name換了(因為router換了之類的)，要記得改)。
 1.API 控制 inverter gateway的開關
 2.取得inverter gateway的狀態
