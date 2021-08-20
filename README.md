@@ -21,7 +21,7 @@ p.s: config_file 檔: 控制inverter開關與其他相關狀態的設定檔(若�
 2.取得inverter gateway的狀態
 3.取得inverter gateway的資訊
 
-##### client #####
+### client ###
 1. sudo reboot         //重啟pi
 2. ./close_iptables.sh //關閉防火牆
 ---------------------------------------
